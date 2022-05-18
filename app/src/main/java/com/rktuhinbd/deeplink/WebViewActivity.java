@@ -23,6 +23,7 @@ public class WebViewActivity extends AppCompatActivity {
             myWebView.clearHistory();
             myWebView.getSettings().setJavaScriptEnabled(true);
             myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+            myWebView.getSettings().setDomStorageEnabled(true);
             myWebView.loadUrl(webUri);
         } else {
             Toast.makeText(this, "Invalid web url!", Toast.LENGTH_LONG).show();
